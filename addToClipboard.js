@@ -1,4 +1,3 @@
-
 // console.count("addToClipboard called ");
 chrome.storage.sync.get(['url'], function (result) {
 
@@ -8,4 +7,3 @@ chrome.storage.sync.get(['url'], function (result) {
     console.log("copy text failed")
   });
 });
-

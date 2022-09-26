@@ -8,7 +8,7 @@
       "type": "module"
    },
    "permissions": [ "activeTab", "clipboardWrite", "contextMenus", "storage", "scripting", "tabs" ],
-   "host_permissions": ["*://*.docs.microsoft.com/*", "*://*.learn.microsoft.com/*" ],
+   "host_permissions": ["<all_urls>" ],
    "action": {
       "default_title": "Copy to clipboard",
       "default_icons": {

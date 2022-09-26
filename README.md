@@ -15,14 +15,14 @@ This extension is not yet available in the Chrome and Edge extension stores, so 
 
 ## Privacy and Permissions
 
-There are no specific permissions you have to authorize for the extension to run, but the application itself uses the following Chrome permissions:
+There are no specific permissions you have to authorize for the extension to run, but the application itself uses the following Chrome permissions, which are explained [here](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/).
 
-* **activeTab** - allows the extension to obtain the URL of the currently viewed web page after click on the extension icon
-* **clipboardWrite** - allows the extension to put the URL into clipboard
-* **contextMenus** - allows the extension to add 'Copy Page URL' and 'Copy Frame URL' items to the context menu
-* **scripting** - ...
-* **storage** - allows the extension to store extension settings in the browser storage
-* **tabs** - ...
+* **activeTab** - Allows the extension to obtain the URL of the currently viewed web page after clicking on the extension icon, or using the context menu to copy.
+* **clipboardWrite** - Allows the extension to put the URL into clipboard
+* **contextMenus** - Allows the extension to add 'Copy Page URL' and 'Copy Frame URL' items to the context menu
+* **scripting** - Allows the background service worker to access the "addToClipboard" script
+* **storage** - Allows the extension to store extension settings in the browser storage
+* **tabs** - Allows the extension to obtain the URLs of the tabs.
 
 After clicking on the extension icon in the browser UI, or selecting the copy option in a right-click context menu, the extension obtains the URL of a currently viewed webpage or a webpage frame, optionally removes some parts of the URL, and places the URL into the clipboard. The extension does not handle the URL in any other way, and does not handle any other user data.
 
@@ -32,8 +32,8 @@ After clicking on the extension icon in the browser UI, or selecting the copy op
 
 ## Roadmap
 
+* Submit to Chrome/Edge extension libraries.
 * Allow for multiple inputs; and picker to easily toggle for which one they want.
-* Upload to Chrome/Edge extension libraries.
 * Add validation to not have it work on non-Learn sites.
 * Strip locale during copy
 

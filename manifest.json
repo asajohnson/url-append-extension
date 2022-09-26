@@ -7,7 +7,7 @@
       "service_worker": "background.js",
       "type": "module"
    },
-   "permissions": [ "activeTab", "tabs", "clipboardWrite", "contextMenus", "storage", "scripting" ],
+   "permissions": [ "clipboardWrite", "contextMenus", "storage", "scripting" ],
    "host_permissions": ["*://*.docs.microsoft.com/*", "*://*.learn.microsoft.com/*" ],
    "action": {
       "default_title": "Copy to clipboard",

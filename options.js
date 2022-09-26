@@ -16,7 +16,7 @@ function saveAndApply(event) {
   }
   
   function restore() {
-    // THe key is called "user_input"
+    // The key is called "user_input"
     chrome.storage.sync.get(["user_input"], function(result) {
       //console.log("result: "+result)
       //console.log("result: "+result.user_input)

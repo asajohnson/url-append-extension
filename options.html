@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Microsoft Learn URL Appender Options</title>
+  <style type="text/css">
+
+    .header { 
+      font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 26.4px;
+    }
+
+    .subheader {
+      font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 25px;
+    }
+
+    .body { 
+      font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px;  
+    }
+
+    .code { 
+      font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px;
+    }
+
+    input[type="text"] {
+      vertical-align: left;
+      font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; font-size: 13px; font-style: normal; font-variant: normal;
+    }
+
+    .option {
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .delimeter {
+      display: inline-block;
+      width: 20px;
+    }
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+    }
+
+    body {
+      overflow: hidden; /* Hide scrollbars */
+   }
+
+  </style>
+
+ 
+</head>
+<body>
+  <div>
+    <div class="header"><h1>Microsoft Learn URL Appender extension settings</h1></div>
+    <div class="body"><p>This extension allows a user to copy URLs, remove any existing parameters, and append their desired Webtrends parameter (using the saved input from this settings page) in one-click, so the copied URL will be in the format below. The desired parameter to add can be changed at any time.</p></div>
+    <div class="code"><p>[Copied URL without existing parameters]?wt.mc_id=[input_from_settings]</p></div>
+    <div class="subheader"><label for="trackingParam">Webtrends tracking parameter to append</label></div>
+    <input type="text" name="trackingParam" id="trackingParam" value="" size="65">
+    <br><br>
+    <button id="save">Save</button>
+    <div id="status"></div>
+  </div>
+  <br>
+
+  <script type = "module" src="options.js"></script>
+</body>
+</html>

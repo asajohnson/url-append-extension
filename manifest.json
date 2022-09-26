@@ -1,6 +1,6 @@
 {
    "name": "Microsoft Learn URL Appender",
-   "description": "Quickly copy a Microsoft Learn URL, with your desired tracking parameter appended.",
+   "description": "Quickly copy a Microsoft Learn URL with your desired tracking parameter appended and others removed.",
    "manifest_version": 3,
    "version": "1.0",
    "background": {

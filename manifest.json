@@ -1,5 +1,5 @@
 {
-   "name": "Microsoft Learn URL Appender - MV3",
+   "name": "Microsoft Learn URL Appender",
    "description": "Quickly copy a Microsoft Learn URL, with your desired tracking parameter appended.",
    "manifest_version": 3,
    "version": "1.0",
@@ -7,7 +7,7 @@
       "service_worker": "background.js",
       "type": "module"
    },
-   "permissions": [ "clipboardWrite", "contextMenus", "storage", "scripting" ],
+   "permissions": [ "activeTab", "clipboardWrite", "contextMenus", "storage", "scripting", "tabs" ],
    "host_permissions": ["*://*.docs.microsoft.com/*", "*://*.learn.microsoft.com/*" ],
    "action": {
       "default_title": "Copy to clipboard",
